@@ -13,7 +13,7 @@ public class Java178_ArrayList {
 		for(String sn: list)
 			System.out.println(sn);
 		
-		
+		//test
 	}//end main()
 
 }//end class
