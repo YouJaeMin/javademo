@@ -4,8 +4,8 @@ public class Java179_ArrayList {
 
 	public static void main(String[] args) {
 
-		System.out.println("testteset");
-		
-	}//end main()
+		System.out.println("tttttt");
 
-}//end class
+	}// end main()
+
+}// end class
