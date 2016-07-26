@@ -40,7 +40,7 @@ public class Prob003_Calendar {
 		Calendar cal = Calendar.getInstance();
 		cal.set(year, (month - 1), 1);
 		int day = cal.get(Calendar.DAY_OF_WEEK) - 1; // 요일
-		int date = cal.getActualMaximum(Calendar.DATE);
+		int date = cal.getActualMaximum(Calendar.DATE); // 마지막일
 
 		for (int i = 0; i < data.length; i++) {
 			for (int j = day; j < data[i].length; j++) {
