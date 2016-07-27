@@ -14,6 +14,9 @@ public class Java184_TreeSet {
 		tree.add(new Integer(15));
 		tree.add(new Integer(20));
 
+		// 기본적으로 오름차순해서 넣어준다.
+		System.out.println(tree);
+
 		Iterator<Integer> ite = tree.iterator();
 
 		System.out.println("오름차순");

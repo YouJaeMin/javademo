@@ -39,6 +39,7 @@ public class Prob004_HashMap {
 		do {
 			System.out.print("찾는 도서명을 입력 : ");
 			String search = sc.nextLine();
+
 			if (map.containsKey(search)) {
 				System.out.printf("책이름 : %s\n", map.get(search).getTitle());
 				System.out.printf("책저자 : %s\n", map.get(search).getAuthor());
@@ -48,6 +49,15 @@ public class Prob004_HashMap {
 				break;
 			}
 		} while (true);
+
+		// if (map.get(search) == null) {
+		// System.out.println("찿는 도서가 없습니다.");
+		// break;
+		// } else {
+		// System.out.printf("책이름 : %s\n", map.get(search).getTitle());
+		// System.out.printf("책저자 : %s\n", map.get(search).getAuthor());
+		// System.out.printf("페이지 : %d\n", map.get(search).getPage());
+		// }
 
 		// try {
 		// System.out.printf("책이름 : %s\n", map.get(search).getTitle());
