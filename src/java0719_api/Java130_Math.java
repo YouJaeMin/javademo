@@ -22,6 +22,8 @@ public class Java130_Math {
 		System.out.println(sqrt(25)); // 제곱근
 		System.out.println(pow(2, 3)); // 거듭제곱
 
+		System.out.println(Math.ceil(34.65)); // 올림
+
 	}// end main()
 
 }// end class

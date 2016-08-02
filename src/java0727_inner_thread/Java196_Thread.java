@@ -75,6 +75,6 @@ public class Java196_Thread {
 		mother.start();
 		sister.start();
 		brother.start();
-
+		
 	} // end main()
 } // end class

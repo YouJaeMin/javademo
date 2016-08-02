@@ -20,6 +20,7 @@ public class Java006_casting {
 		// 명시적형변환을 할때 값의 범위에 주의한다.
 		byte one = (byte) num;
 		System.out.println(one);
-
+		
+		
 	}// end main()
 }// end class
