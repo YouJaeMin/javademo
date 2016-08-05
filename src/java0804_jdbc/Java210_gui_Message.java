@@ -1,8 +1,12 @@
 package java0804_jdbc;
 
+import java.awt.BorderLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
@@ -33,42 +37,30 @@ import javax.swing.JOptionPane;
  * 4 QUESTION_MESSAGE
  * 5 PLAIN_MESSAGE
  */
-class Pane extends JFrame {
+class MessTest extends JFrame implements ActionListener {
+	JButton btn;
 
-	public Pane() {
+	public MessTest() {
 
-		setSize(500, 500);
+		btn = new JButton("exit");
+		add(BorderLayout.CENTER, btn);
+
+		btn.addActionListener(this);
+		
+		setSize(300, 300);
 		setVisible(true);
+		setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+	}
 
-		this.addWindowListener(new WindowAdapter() {
-			@Override
-			public void windowClosing(WindowEvent e) {
-				Object[] options = { "OK", "CANCEL" };
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// JOptionPane.showMessageDialog(this, "정말로 종료하겠습니까?", "종료", 1);
+		int option = JOptionPane.showConfirmDialog(this, "정말로 종료하겠습니까?", "종료", JOptionPane.YES_NO_OPTION);
+		// yes = 0 no = 1;
 
-				int key = JOptionPane.showOptionDialog(null, "Click OK to continue", "Warning",
-						JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[0]);
-
-				// CLOSED_OPTION - 종료(X) 버튼으로 창을 닫은 경우. CANCEL / NO와 비슷하게
-				// 처리해줘야합니다.
-				// YES_OPTION - 예(YES) 버튼 선택시 리턴값
-				// NO_OPTION - 아니오(NO) 버튼 선택시
-				// CANCEL_OPTION - 취소(CANCEL) 버튼 선택시
-				// OK_OPTION - 확인(OK) 버튼 선택시
-
-				switch (key) {
-				case JOptionPane.YES_OPTION:
-					System.exit(0);
-					break;
-				case JOptionPane.CLOSED_OPTION:
-				case JOptionPane.CANCEL_OPTION:
-				case JOptionPane.NO_OPTION:
-
-					break;
-
-				}
-
-			}
-		});
+		if (option == JOptionPane.YES_OPTION) {
+			System.exit(0);
+		}
 
 	}
 
@@ -77,7 +69,7 @@ class Pane extends JFrame {
 public class Java210_gui_Message {
 
 	public static void main(String[] args) {
-		new Pane();
+		new MessTest();
 
 	}// end main()
 

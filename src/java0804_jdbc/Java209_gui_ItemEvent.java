@@ -1,6 +1,8 @@
 package java0804_jdbc;
 
 import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 
@@ -86,6 +88,7 @@ class MultiData extends JFrame implements ItemListener {
 		jspChk.addItemListener(this);
 		springChk.addItemListener(this);
 		locBox.addItemListener(this);
+		
 
 		setSize(500, 500);
 		setVisible(true);
@@ -119,6 +122,7 @@ class MultiData extends JFrame implements ItemListener {
 		ta.append(index + " : " + txt);
 
 	}
+
 
 }
 
