@@ -19,8 +19,8 @@ C:\oraclexe\app\oracle\product\10.2.0\server\jdbc
 테이블 만들기
 http://justinkwony.github.io/ermaster-nhit/update-site/
 
-
-
+egit
+http://download.eclipse.org/egit/updates
 
 
 

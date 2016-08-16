@@ -21,9 +21,9 @@ public class Java198_jdbc {
 		// dao.deleteMethod(1);+
 
 		// ArrayList<MemDTO> mData = new ArrayList<MemDTO>();
-		// mData.add(new MemDTO("first", 8, "세종"));
-		// mData.add(new MemDTO("second", 5, "세종"));
-		// mData.add(new MemDTO("third", 3, "세종"));
+		// mData.add(new MemDTO("first1", 8, "세종"));
+		// mData.add(new MemDTO("second2", 5, "세종"));
+		// mData.add(new MemDTO("third3", 3, "세종"));
 		// int cnt = dao.insertmethod(mData);
 		// System.out.println("삽입갯수:"+cnt);
 

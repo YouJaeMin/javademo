@@ -157,7 +157,7 @@ public class MemDAO {
 			// + dto.getAge() + ",'" + dto.getLoc() + "')";
 			// stmt.executeUpdate(sql);
 
-			String sql = "insert into mem(num, name, age, loc) values(mem_num_seq.nextval,?,?,?)";
+			String sql = "insert into mem values(mem_num_seq.nextval,?,?,?)";
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, dto.getName());
 			pstmt.setInt(2, dto.getAge());
