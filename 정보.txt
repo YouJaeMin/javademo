@@ -1,11 +1,8 @@
 ﻿컴퓨터 기본 IP 주소 : 127.0.0.1
 
-
 sql commit mode
 
 data management > sql development > sql deitor > sql files/scrapbooks
-
-
 
 
 C:\Program Files\Java\jdk1.8.0_91\jre\lib\ext 에 오라클 jar파일 을 넣어라
@@ -15,12 +12,53 @@ ojdbc14.jar
 
 C:\oraclexe\app\oracle\product\10.2.0\server\jdbc
 
-
+// 이클립스 
 테이블 만들기
 http://justinkwony.github.io/ermaster-nhit/update-site/
 
 egit
 http://download.eclipse.org/egit/updates
+////////
+
+
+톰켓
+http://tomcat.apache.org/
+
+conf폴더 server.xml 파일 수정
+<Connector port="8090" protocol="HTTP/1.1"
+               connectionTimeout="20000"
+               redirectPort="8443" URIEncoding="UTF-8"/>
+
+
+html5 공부  /////////
+https://www.w3.org/
+https://www.w3.org/standards/webdesign/htmlcss
+
+http://www.w3schools.com/
+http://koreahtml5.kr/
+
+///////////////////////////////////////
+
+javascript
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
