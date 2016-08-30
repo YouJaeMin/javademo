@@ -11,7 +11,7 @@ public class Java198_jdbc {
 	public static void main(String[] args) {
 		MemDAO dao = MemDAO.getinstance();
 
-		// dao.insertmethod(new MemDTO("몬스터", 25, "제주 "));
+		// dao.insertmethod(new MemDTO("홍홍홍", 25, "제주 "));
 
 		// HashMap<String, Object> map = new HashMap<String, Object>();
 		// map.put("num", 1);
